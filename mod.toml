@@ -5,24 +5,30 @@
 
 # Unique ID of this mod. Pick something long enough that it'll never be the same as any other mod.
 # The name displayed in the mod management menu is separate from this so this doesn't need to be human readable.
-id = "mm_recomp_mod_template"
+id = "save_on_mooncrash"
 
 # Version of this mod.
 version = "1.0.0"
 
 # The name that will show up for this mod in the mod menu. This should be human readable.
-display_name = "Always Spin Attack"
+display_name = "Save On Moon-Crash"
 
 # The description that will show up when this mod is displayed in the mod menu. This should be human readable.
 description =  """
-This is an example mod for Majora's Mask: Recompiled that can be used as a template for creating mods. \
-When this mod is enabled, you will always perform a quickspin when swinging your sword.
+In Majora's Mask, the penalty for letting the clock run out and the moon crash is losing all progress from that cycle.
+However, because the original game deleted your Owl Saves after they're loaded (and the only other way to save was with the Song of Time),
+There was never a need for the game to save after a moon crash, only to delete your cycle progress from memory.
 
-For more details, see https://github.com/Zelda64Recomp/MMRecompModTemplate."""
+However, when using Zelda64Recompiled's autosave system (or LittleCube's Owls Never Quit mod), the deletion of owl saves is disabled,
+and therefore a moon crash can be undone by reloading your save. This is a perfectly fine QoL feature (especially for those new to the game),
+but some players (myself included) may enjoy the original threat of losing progress if the moon falls.
+
+For those players, this mod exists. All it does is trigger an autosave when the moon crashes, thus overriding your save file and deleting that cycle's progress.
+"""
 
 # A short description that will show up in this mod's entry in the mod list. This should be human readable and kept short
 # to prevent it from being cut off due to the limited space.
-short_description = "Always perform a quickspin when swinging your sword."
+short_description = "Zelda64Recompiled will let you undo a moon crash by reloading your save. This mod prevents that."
 
 # Authors of this mod.
 authors = [ "Your name here" ]
@@ -52,7 +58,7 @@ native_libraries = [
 elf_path = "build/mod.elf"
 
 # Output mod filename.
-mod_filename = "mm_recomp_mod_template"
+mod_filename = "save_on_mooncrash"
 
 # Reference symbol files.
 func_reference_syms_file = "Zelda64RecompSyms/mm.us.rev1.syms.toml"
