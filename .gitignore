@@ -14,6 +14,9 @@
 patches.map
 assets_extracted/
 build/
+binaries/
+downloads/
+thunderstore_packages/
 runtime/
 .vscode/settings.json
 .vscode/launch.json
