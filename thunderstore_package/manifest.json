@@ -1,7 +1,0 @@
-{
-    "name": "Save_On_MoonCrash",
-    "version_number": "1.0.1",
-    "website_url": "https://github.com/LT-Schmiddy/zelda64recomp-schmiddy-save-mod",
-    "description": "Zelda64Recompiled will let you undo a moon crash by reloading your save. This mod prevents that.",
-    "dependencies": []
-}
